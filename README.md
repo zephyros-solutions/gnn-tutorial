@@ -6,22 +6,23 @@ This repository has been forked from [A Practical Guide to Graph Neural Networks
 
 ```
 .
-├── html            # Exported .html files of the notebooks
 ├── notebooks       # The .ipynb files of the example code
 ├── .gitignore                     
-├── env.yml         # The conda environment dependencies file
+├── requirements.txt         # The pip requirements file
 ├── LICENSE
 └── README.md
 ```
 
 ## Running on your own computer
 
-To run the code, use a conda-based package manager and install dependencies from the file ```env.yml``` .yml file. Do this using the following command (or similar):
+To run the code, install the requirements with ```pip install -r requirements.txt```, preferably creating before a conda-based environment with the following command:
 
 ```
-conda env create -f env.yml
+conda create -n gnn_tutorial python==3.8
+conda activate gnn_tutorial
+pip install -r requirements.txt
 ```
 
-Activate this environment and run the ```jupyter notebook``` command.
+After these operations run the ```jupyter notebook``` command.
 
 This code has been tested using Python 3.8.0.
